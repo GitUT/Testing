@@ -4,6 +4,7 @@
   "description": "Utility library with tests!",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint \"test/**\"",
     "test": "c8 --all --include 'src' --exclude 'src/.internal' --excude 'test' mocha",
     "coverage": "c8 report --all --include 'src' --exclude 'src/.internal' --exclude 'test' --reporter=text-lcov | coveralls"
   },
@@ -21,6 +22,9 @@
     "c8": "^7.10.0",
     "chai": "^4.3.4",
     "coveralls": "^3.1.1",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "mocha": "^9.1.3"
   }
 }
