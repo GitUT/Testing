@@ -1,13 +1,12 @@
-const assert = require('chai').assert;
+const { assert } = require("chai");
 
-const kek = require('../index');
+const kek = require("../index");
 
-
-describe('Juuh', function () {
-    describe('Hello World', function() {
-        it("should pass", function() {
+describe("Juuh", () => {
+    describe("Hello World", () => {
+        it("should pass", () => {
             kek();
             assert.typeOf("ggg", "string");
-        })
-    })
-})
+        });
+    });
+});
