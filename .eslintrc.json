@@ -12,6 +12,7 @@
         "ecmaVersion": 13
     },
     "rules": {
+        "import/extensions": ["error", "always"],
         "linebreak-style": "off",
         "indent": ["error", 4],
         "quotes": ["warn", "double"]
