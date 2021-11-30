@@ -3,24 +3,18 @@ import add from "../src/add.js";
 
 // Testing add function with different inputs
 describe("add", () => {
-    it("adds two positive decimal numbers together", () => {
-        const result = 16.8;
-        expect(add(6.9, 9.9)).to.eql(result);
-    });
-    it("adds a positive decimal number and 0 together", () => {
-        const result = 699.999;
-        expect(add(699.999, 0)).to.eql(result);
-    });
-    it("adds a positive decimal number and a negative decimal number together", () => {
-        const result = 5354.51;
-        expect(add(5454.5, -99.99)).to.eql(result);
-    });
-    it("adds two negative decimal numbers together", () => {
-        const result = -84.4;
-        expect(add(-24.5, -59.9)).to.eql(result);
-    });
-    it("adds a negative decimal number and 0 together", () => {
-        const result = -20.25;
-        expect(add(-20.25, 0)).to.eql(result);
-    });
+    let i = 1;
+
+    function testCase(description, a, b, result) {
+        it(`${i}. ${description}`, () => {
+            expect(add(a, b)).to.eql(result);
+        });
+        i += 1;
+    }
+
+    testCase("adds two positive decimal numbers together", 6.9, 9.9, 16.8);
+    testCase("adds a positive decimal number and 0 together", 699.999, 0, 699.999);
+    testCase("adds a positive decimal number and a negative decimal number together", 5454.5, -99.99, 5354.51);
+    testCase("adds two negative decimal numbers together", -24.5, -59.9, -84.4);
+    testCase("adds a negative decimal number and 0 together", -20.25, 0, -20.25);
 });
