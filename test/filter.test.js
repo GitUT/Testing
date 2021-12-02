@@ -4,47 +4,22 @@ import TestMaker from "./utility/utility.js";
 const testMaker = new TestMaker(filter);
 
 const truthyX = [
-    {
-        x: true,
-    },
-    {
-        x: 3,
-    },
-    {
-        x: "xd",
-    },
-];
+    { x: true },
+    { x: 3 },
+    { x: "xd" }];
 
 const testArray = [
-    {
-        x: 2,
-        o: false,
-    },
-    {
-        x: false,
-    },
-    {
-        b: null,
-    },
-    {
-        x: ["string", { obj: "ect" }],
-    },
-    {
-        x: null,
-    },
-    {
-        y: "b",
-    },
+    { x: 2, o: false },
+    { x: false },
+    { b: null },
+    { x: ["string", { obj: "ect" }] },
+    { x: null },
+    { y: "b" },
 ];
 
 const resultArray = [
-    {
-        x: 2,
-        o: false,
-    },
-    {
-        x: ["string", { obj: "ect" }],
-    },
+    { x: 2, o: false },
+    { x: ["string", { obj: "ect" }] },
 ];
 
 function giveX(object) {
