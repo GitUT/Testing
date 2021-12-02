@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import compact from "../src/compact.js";
 import TestMaker from "./utility/utility.js";
 
