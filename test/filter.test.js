@@ -72,4 +72,5 @@ describe("filter", () => {
     testMaker.testCase("Array of objects, function always returns true. Return the array.", testArray, [testArray, giveTrue]);
     testMaker.testCase("Array of objects with no property y, function returns value of y. Return empty array", [], [truthyX, giveY]);
     testMaker.testCase("Array of objects some of which have property x, function returns value of x. Return array filtered.", resultArray, [testArray, giveX]);
+    testMaker.testCase("Null instead of array, function returns value of y. Return empty array.", [], [null, giveY]);
 });
