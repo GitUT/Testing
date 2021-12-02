@@ -5,7 +5,7 @@ const testMaker = new TestMaker(compact);
 
 // Testing compact function with different inputs
 describe("compact", () => {
-    testMaker.testCase("Return a list with null-value removed", [1, 2], [[1, null, 2]]);
+    testMaker.testCase("Return a list with null-value removed", [1], [[1, null]]);
     testMaker.testCase("Return a list with 0-value removed", [1, 2, 3], [[0, 1, 2, 3]]);
     testMaker.testCase("Return a list with false-value removed", [8, 10], [[8, 10, false]]);
     testMaker.testCase("Return a list with \"\"-value removed", ["test", 2], [["test", "", 2]]);
