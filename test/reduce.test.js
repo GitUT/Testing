@@ -38,5 +38,5 @@ describe("reduce", () => {
     testMaker.testCase("Array of strings, a function that accumulates string lengths, number.", 16, [["re", "mmm", "popcorn"], textLengthSum, 4]);
     testMaker.testCase("Array of numbers, a function that accumulates string lenths, number.", NaN, [[4, 3, 10, 6], textLengthSum, 8]);
     testMaker.testCase("Object of objects with x: string, a function that accumulates lengths of those strings, number", 23, [objects, propertyXLengthSum, 10]);
-    testMaker.testCase("Array of functions, a function that counts the elementsg, number", 10, [[multiply, textLengthSum, propertyXLengthSum], counter, 7]);
+    testMaker.testCase("Array of functions, a function that counts the elements, number", 10, [[multiply, textLengthSum, propertyXLengthSum], counter, 7]);
 });
